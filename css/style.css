@@ -14,14 +14,20 @@ body {
 .titulo-destaque {
   color: #fd2222;
 }
+.imagem-principal {
+  border-radius: 12px;
+}
 .container {
-  margin: 10%;
+  margin: 10% 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .container-conteudo {
   width: 615px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .container-conteudo-titulo {
   font-size: 36px;
@@ -34,4 +40,23 @@ body {
 .button {
   display: flex;
   justify-content: space-between;
+}
+.button-first {
+  width: 270px;
+  margin: 12px;
+  padding: 12px;
+  color: black;
+  background-color: #fd2222;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 16px;
+}
+.button-first:hover {
+  color: #fd2222;
+  background-color: black;
+  transition: 0.5s;
+  font-family: "Krona One", sans-serif;
 }
