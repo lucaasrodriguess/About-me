@@ -1,24 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@100;700&display=swap");
+:root {
+  /*Cores*/
+  --cor-primaria: #000000;
+  --cor-secundaria: #f6f6f6;
+  --cor-terciaria: #fd2222;
+  --cor-hover: #272727;
+
+  /*Fontes*/
+  --fonte-principal: "Krona One", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+}
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  height: 100vh;
   box-sizing: border-box;
-  background-color: #000000;
-  color: #f6f6f6;
+  background-color: var(--cor-primaria);
+  color: var(--cor-secundaria);
+}
+.cabecalho {
+  padding: 2% 0 0 15%;
+}
+.menu {
+  display: flex;
+  gap: 80px;
+}
+.menu-links {
+  color: var(--cor-terciaria);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: var(--fonte-secundaria);
+  text-decoration: none;
+}
+.menu-links:hover {
+  padding: 8px;
+  color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
+  border-radius: 7px;
+  transition: 0.5s;
 }
 
 .titulo-destaque {
-  color: #fd2222;
+  color: var(--cor-terciaria);
+}
+.titulo-button {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: var(--fonte-principal);
 }
 .imagem-principal {
   border-radius: 12px;
 }
 .container {
-  margin: 10% 15%;
+  padding: 8% 15%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -31,32 +67,51 @@ body {
 }
 .container-conteudo-titulo {
   font-size: 36px;
-  font-family: "Krona One", sans-serif;
+  font-family: var(--fonte-principal);
 }
 .container-conteudo-text {
   font-size: 24px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--fonte-secundaria);
 }
 .button {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 }
 .button-first {
-  width: 270px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  width: 378px;
   margin: 12px;
   padding: 12px;
-  color: black;
-  background-color: #fd2222;
+  color: #f6f6f6;
+  /* background-color: black; */
+  border: 2px solid var(--cor-terciaria);
   font-size: 24px;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--fonte-secundaria);
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 .button-first:hover {
-  color: #fd2222;
-  background-color: black;
+  color: var(--cor-primaria);
+  background-color: var(--cor-hover);
   transition: 0.5s;
-  font-family: "Krona One", sans-serif;
+  font-family: var(--fonte-secundaria);
+}
+.rodape {
+  padding: 16px;
+  color: var(--cor-primaria);
+  background-color: var(--cor-terciaria);
+  font-weight: bold;
+  font-family: var(--fonte-secundaria);
+  font-size: 24px;
+  text-align: center;
+}
+/*Paragrafo About-me*/
+#about-me {
+  padding: 16px;
 }
